@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+        >
+
+    <Button
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:id="@+id/start"
+            android:text="Start Recording"
+            android:onClick="startRecording"
+            />
+
+    <Button
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:id="@+id/stop"
+            android:text="Stop Recording"
+            android:onClick="stopRecording"
+            />
+
+    <Button
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:id="@+id/clear"
+            android:text="Clear DB"
+            android:onClick="clearDB"
+            />
+
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:text="X: "
+                  android:id="@+id/x"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:layout_toRightOf="@id/x"
+                  android:id="@+id/xPos"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:layout_below="@id/x"
+                  android:text="Y: "
+                  android:id="@+id/y"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:layout_toRightOf="@id/y"
+                  android:layout_below="@id/x"
+                  android:id="@+id/yPos"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:layout_below="@id/y"
+                  android:text="Z: "
+                  android:id="@+id/z"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:layout_toRightOf="@id/z"
+                  android:layout_below="@id/y"
+                  android:id="@+id/zPos"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:layout_below="@id/z"
+                  android:layout_marginTop="20dp"
+                  android:text="Heading: "
+                  android:id="@+id/h"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:layout_toRightOf="@id/h"
+                  android:id="@+id/heading"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:layout_below="@id/h"
+                  android:text="Pitch: "
+                  android:id="@+id/p"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:layout_toRightOf="@id/p"
+                  android:id="@+id/pitch"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:layout_below="@id/p"
+                  android:text="Roll: "
+                  android:id="@+id/r"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:layout_toRightOf="@id/r"
+                  android:id="@+id/roll"/>
+    </RelativeLayout>
+</LinearLayout>
+
